@@ -3,6 +3,8 @@
 Swap and bridge tokens across **Ethereum, Arbitrum, Optimism, Base and Polygon** from one screen.
 Swappy asks [LI.FI](https://li.fi) for routes across bridges and DEXs, shows you the options, and executes the one you pick from your own wallet.
 
+**Live:** https://notbhavyajain.github.io/Swappy/
+
 ![Swappy screenshot](public/screenshot.png)
 
 ## What it does
@@ -34,6 +36,12 @@ npm run dev
 Open http://localhost:3000 and connect a browser wallet (MetaMask, Rabby, etc.).
 
 Optional: copy `.env.example` to `.env.local` and add your own RPC URLs. Public RPCs are used otherwise.
+
+## Deploy
+
+The app is fully client-side and builds to a static export (`out/`).
+Every push to `main` deploys it to GitHub Pages via `.github/workflows/deploy.yml`.
+It also works on Vercel/Netlify as-is (leave `PAGES_BASE_PATH` unset there).
 
 ## How it works
 
